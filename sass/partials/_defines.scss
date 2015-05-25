@@ -1,0 +1,94 @@
+/* ===================================================================
+
+define style
+
+=================================================================== */
+
+%icon{
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+%ib{
+	@include inline-block;
+}
+
+%blow{
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	display: block;
+}
+
+%clearfix{
+	zoom: 1;
+	&:before,&:after{
+		content: "";
+		display: block;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+%hover{
+	@include transition(opacity ease 0.3s);
+	&:hover{
+		@include opacity(0.7);
+	}
+}
+
+%elps{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+}
+
+%no_tap{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+%no_call{
+	-webkit-touch-callout:none;
+}
+
+%tdn{
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+%tdu{
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+%bb{
+	@include box-sizing(border-box);
+}
+
+%hover{
+	@include transition(opacity ease 0.3s);
+	&:hover{
+		@include opacity(0.7);
+	}
+}
+
+%container {
+	@extend %clearfix;
+	max-width: $size-max;
+	padding: 0 $gutter;
+	margin: 0 auto;
+}
+
+%row {
+	@extend %clearfix;
+	margin-left: -$gutter;
+	width: 100% + $gutter;
+	*padding-right: 1%;
+}

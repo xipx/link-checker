@@ -1,0 +1,16 @@
+/* ===================================================================
+
+setting 変数定義をここに記載していく
+
+=================================================================== */
+
+// clum width
+$gutter: 0;
+$size_max: 1020px;
+
+// font
+%base-font {
+  font-family: "Roboto", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

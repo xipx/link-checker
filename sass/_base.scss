@@ -1,0 +1,35 @@
+/* ===================================================================
+
+base style
+
+=================================================================== */
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include rem(14);
+  @extend %base-font;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #189de5;
+  &:hover {
+    color: #676767;
+    text-decoration: underline;
+  }
+}
+
+::selection {
+  background: red;
+  color: #fff;
+}

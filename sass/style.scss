@@ -1,0 +1,109 @@
+/* ===================================================================
+
+common style
+
+=================================================================== */
+@import "compass";
+@import "ceaser-easing";
+@import "setting";
+@import "partials/defines";
+@import "partials/mixins";
+@import "base";
+
+body {
+  margin: 0;
+  min-width: 340px;
+}
+
+form {
+  line-height: 2;
+  padding: 15px;
+  legend {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  input:focus {
+    outline: none;
+  }
+  input[type=checkbox] {
+    display: inline-block;
+    position: relative;
+    width: 2em;
+    height: 2em;
+    -webkit-appearance: none;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 100%;
+    margin: 0 0.6em 0 0;
+    &:checked {
+      &::before {
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        content: "\e601";
+        display: block;
+        left: 3px;
+        top: -1px;
+        position: absolute;
+        font-size: 20px;
+        color: #26a69a;
+      }
+    }
+  }
+  .container {
+    display: flex;
+    margin-bottom: 0.5em;
+    justify-content: center;
+    .row {
+      display: flex;
+      align-items: center;
+      margin-right: 1em;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+#inspect, #check {
+  position: relative;
+  text-align: center;
+  padding: 0.5em 1em;
+  line-height: 1.5;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover{
+    background-color: #20B9AB;
+  }
+  span {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+#check {
+  padding: 1em;
+}
+
+button {
+  @extend %base-font;
+  outline: none;
+  background: #26a69a;
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 1.5em;
+  font-size: 100%;
+  cursor: pointer;
+}

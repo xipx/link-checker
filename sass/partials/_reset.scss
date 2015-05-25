@@ -1,0 +1,76 @@
+/* ===================================================================
+
+reset style
+
+=================================================================== */
+
+body{
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	line-height: 1;
+	word-break:break-all;
+}
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, textarea{
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 100%;
+	font-weight:normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+img{
+	vertical-align: bottom;
+}
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, div, address, iframe, canvas, hr, textarea {
+  display:block;
+  line-height: 1;
+}
+a,label{
+	cursor: pointer;
+}
+blockquote {
+	padding: 0;
+	margin: 0;
+	display:block;
+}
+address,em{
+	font-style:normal;
+}
+hr{
+	border:0;
+	margin:0;
+	padding:0;
+}
+ul,ol,li{
+	list-style:none;
+}
+textarea{
+	resize:vertical;
+	overflow:hidden;
+	-webkit-appearance:none;
+	border:none;
+}
+input,button,select {
+	vertical-align: middle;
+	@include border-radius(0px);
+	border:none;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+	-webkit-appearance:none;
+}
+table{
+	border-collapse:collapse;
+}
+*:before,
+*:after{
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}

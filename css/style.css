@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* ===================================================================
+
+common style
+
+=================================================================== */
+/* ===================================================================
+
+setting 変数定義をここに記載していく
+
+=================================================================== */
+body, button {
+  font-family: "Roboto", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===================================================================
+
+define style
+
+=================================================================== */
+/* ===================================================================
+
+mixin style
+
+=================================================================== */
+/* ===================================================================
+
+base style
+
+=================================================================== */
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #189de5;
+}
+a:hover {
+  color: #676767;
+  text-decoration: underline;
+}
+
+::selection {
+  background: red;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  min-width: 340px;
+}
+
+form {
+  line-height: 2;
+  padding: 15px;
+}
+form legend {
+  font-size: 1.2em;
+  text-align: center;
+}
+form input:focus {
+  outline: none;
+}
+form input[type=checkbox] {
+  display: inline-block;
+  position: relative;
+  width: 2em;
+  height: 2em;
+  -webkit-appearance: none;
+  border: 1px solid #d5d5d5;
+  border-radius: 100%;
+  margin: 0 0.6em 0 0;
+}
+form input[type=checkbox]:checked::before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  content: "\e601";
+  display: block;
+  left: 3px;
+  top: -1px;
+  position: absolute;
+  font-size: 20px;
+  color: #26a69a;
+}
+form .container {
+  display: flex;
+  margin-bottom: 0.5em;
+  justify-content: center;
+}
+form .container .row {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+form .container .row:last-child {
+  margin-right: 0;
+}
+form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#inspect, #check {
+  position: relative;
+  text-align: center;
+  padding: 0.5em 1em;
+  line-height: 1.5;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#inspect:hover, #check:hover {
+  background-color: #20B9AB;
+}
+#inspect span, #check span {
+  position: relative;
+  z-index: 2;
+}
+
+#check {
+  padding: 1em;
+}
+
+button {
+  outline: none;
+  background: #26a69a;
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 1.5em;
+  font-size: 100%;
+  cursor: pointer;
+}

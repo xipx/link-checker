@@ -1,0 +1,17 @@
+/* ===================================================================
+
+mixin style
+
+=================================================================== */
+
+@mixin rem($size,$base:10) {
+	font-size: ($size / $base) + rem;
+}
+
+@mixin placeholder($color,$size){
+	&::placeholder {
+		color: $color;
+		@include rem($size);
+		@extend %font1;
+	}
+}

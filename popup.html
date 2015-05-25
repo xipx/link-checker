@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/icon.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<form id="form">
+    <fieldset>
+        <legend>Checks</legend>
+        <div class="container">
+            <div class="row">
+                <input type="checkbox" name="checkHash" value="hash" id="hash" checked/> <label for="hash" title='href="#"'>Hash</label>
+            </div>
+            <div class="row">
+                <input type="checkbox" name="checkBlank" value="blank" id="blank" checked/> <label for="blank" title='href=""'>Empty</label>
+            </div>
+            <div class="row">
+                <input type="checkbox" name="checkStatusCode" value="blank" id="Status-Code"/> <label for="Status-Code" title='Check HTTP-Status-Code'>Status-Code</label>
+            </div>
+        </div>
+        <button id="inspect"><span class="icon-search">Select a container</span></button>
+    </fieldset>
+</form>
+<button id="check"><span>Check</span></button>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

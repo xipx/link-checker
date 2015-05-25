@@ -1,0 +1,23 @@
+/* ===================================================================
+
+common style
+
+=================================================================== */
+.lc-inspecting {
+  box-shadow: 0 0 5px 1px #308c00;
+}
+
+.lc-broken-link {
+  background-color: #FC352F;
+  color: #fff;
+  -webkit-animation-name: lc-broken-link;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes lc-broken-link {
+  50% {
+    transform: scale(0.93);
+  }
+}
